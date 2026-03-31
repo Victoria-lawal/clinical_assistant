@@ -16,3 +16,4 @@ pdfplumber
 
 # Utilities
 python-dotenv
+gunicorn
