@@ -52,14 +52,12 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",  # Local development
-        "https://*.vercel.app",   # Any Vercel deployment
-        # When deployed, add your exact URL:
-        # "https://your-project.vercel.app"
+        "http://localhost:3000",
+        "https://clinical-assistant-eight.vercel.app",
     ],
-    allow_credentials=True,  # Allow cookies/auth
-    allow_methods=["*"],  # Allow GET, POST, PUT, DELETE, etc.
-    allow_headers=["*"],  # Allow any headers
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # ============================================================================
