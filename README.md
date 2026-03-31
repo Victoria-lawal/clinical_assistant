@@ -268,52 +268,6 @@ Tested on a sample dataset of 5 medical documents (150KB total):
 3. **Mistral API rate limits:** 20 requests/min on free tier
 4. **No real-time updates:** Must re-upload documents for index updates
 
-## Future Improvements
-
-- [ ] Add hybrid search (BM25 + semantic)
-- [ ] Implement caching for frequent queries
-- [ ] Add user authentication
-- [ ] Support for image documents
-- [ ] Batch processing for large datasets
-- [ ] Admin panel for document management
-- [ ] Analytics dashboard (query volume, latency, etc.)
-
-## Why This Project Matters
-
-This isn't a tutorial project. It demonstrates:
-
-✅ **Understanding fundamentals** - Not copying code, but understanding why each decision matters
-✅ **Production mindset** - Separation of concerns, proper deployment, error handling
-✅ **Debugging skills** - Identified problems (vague queries, boundary loss) and fixed them
-✅ **Full-stack** - Frontend + backend + deployment + API design
-✅ **Clear communication** - Can explain every choice and its tradeoffs
-
-Perfect for AI engineering internship interviews.
-
-## Contributing
-
-This is a portfolio project. If you'd like to improve it:
-
-1. Fork the repo
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit changes (`git commit -m "Add improvement"`)
-4. Push to branch (`git push origin feature/improvement`)
-5. Open a Pull Request
-
-## License
-
-MIT License - feel free to use this as a reference for your own projects.
-
-## Questions?
-
-- See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for deployment help
-- See [LEARNINGS.md](./LEARNINGS.md) for technical deep-dives
-- Open an issue on GitHub
-
----
 
 **Built with:** Next.js, FastAPI, ChromaDB, Mistral, Vercel, Railway
 
-**Last Updated:** January 2024
-
-**Status:** Production-ready ✅
