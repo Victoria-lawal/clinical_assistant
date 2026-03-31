@@ -1,0 +1,29 @@
+{
+  "name": "rag-research-system",
+  "version": 2,
+  "buildCommand": "next build",
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_API_URL": {
+      "description": "Backend API URL (from Railway or other hosting)",
+      "required": true,
+      "example": "https://rag-backend-production.railway.app"
+    }
+  },
+  "regions": ["iad1"],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
+      ]
+    }
+  ]
+}

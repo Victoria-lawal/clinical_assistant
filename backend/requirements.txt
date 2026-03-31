@@ -1,0 +1,18 @@
+fastapi
+uvicorn
+pydantic
+python-multipart
+
+# RAG & ML
+chromadb
+openai
+mistralai
+tavily-python
+requests
+
+# PDF handling
+pypdf
+pdfplumber
+
+# Utilities
+python-dotenv
