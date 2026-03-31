@@ -4,21 +4,6 @@ A production-ready Retrieval-Augmented Generation (RAG) system built from scratc
 
 **Live Demo:** [rag-research-system.vercel.app](https://rag-research-system.vercel.app)
 
-## What is RAG?
-
-Retrieval-Augmented Generation (RAG) solves a fundamental problem: **LLMs hallucinate when they don't have relevant context.**
-
-```
-Traditional LLM: "What's in my document?"
-→ ❌ Hallucination or out-of-date knowledge
-
-RAG System:
-1. Retrieve relevant chunks from your documents
-2. Pass them to the LLM along with the question
-3. LLM generates answer grounded in your actual data
-→ ✅ Factual, sourced, verifiable
-```
-
 ## Architecture
 
 ```
