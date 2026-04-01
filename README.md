@@ -1,8 +1,8 @@
 # RAG Research System
 
-A production-ready Retrieval-Augmented Generation (RAG) system built from scratch. Combines document chunking, semantic search, and LLM inference into a single deployable application.
+A Retrieval-Augmented Generation (RAG) system that combines document chunking, semantic search, and LLM inference into a single deployable application.
 
-**Live Demo:** [rag-research-system.vercel.app](https://rag-research-system.vercel.app)
+**Live Demo:** [clinical-assistant-eight.vercel.app](https://clinical-assistant-eight.vercel.app/)
 
 ## Architecture
 
@@ -180,9 +180,6 @@ See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for step-by-step instructions:
 │   │   └── types.ts
 │   ├── package.json
 │   └── tailwind.config.ts
-│
-├── DEPLOYMENT_GUIDE.md      # Full deployment instructions
-├── LEARNINGS.md             # Problems solved & lessons learned
 └── README.md
 ```
 
@@ -234,25 +231,4 @@ curl -X POST http://localhost:8000/api/research \
   -d '{"topic": "Latest developments in LLMs", "depth": 3}'
 ```
 
-## Performance Metrics
-
-Tested on a sample dataset of 5 medical documents (150KB total):
-
-| Metric | Value | Notes |
-|--------|-------|-------|
-| Query latency | 1.2s avg | Excludes network roundtrip |
-| Retrieval precision | 85% | Accuracy of chunk selection |
-| Generation quality | Good | Factual, cited sources |
-| Concurrent users | 10+ | Limited by backend hardware |
-| Max document size | 50MB | Chunk processing time increases linearly |
-
-## Known Limitations
-
-1. **ChromaDB on local disk:** No distributed storage (fine for demo, not production at scale)
-2. **Vercel 10s timeout:** Backend must be separate, can't do long operations on frontend
-3. **Mistral API rate limits:** 20 requests/min on free tier
-4. **No real-time updates:** Must re-upload documents for index updates
-
-
-**Built with:** Next.js, FastAPI, ChromaDB, Mistral, Vercel, Railway
 
